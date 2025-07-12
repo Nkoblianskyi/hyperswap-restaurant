@@ -9,7 +9,7 @@ export default function PrivacyPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('/placeholder.svg?height=800&width=1920')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('/bg.jpg')`,
           }}
         />
         <Navigation />

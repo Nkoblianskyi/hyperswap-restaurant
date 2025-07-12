@@ -9,7 +9,7 @@ export default function CookiesPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('/placeholder.svg?height=800&width=1920')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('/bg.jpg')`,
           }}
         />
         <Navigation />
@@ -95,7 +95,6 @@ export default function CookiesPage() {
             <p className="text-gray-300 leading-relaxed">If you have questions about our use of cookies, contact us:</p>
             <div className="mt-4 text-gray-300">
               <p>Email: info@hyperswap.com</p>
-              <p>Phone: +1 (555) 123-4567</p>
             </div>
           </section>
         </div>

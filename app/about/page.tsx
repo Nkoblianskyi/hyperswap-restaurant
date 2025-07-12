@@ -170,7 +170,7 @@ export default function AboutPage() {
             <div className="lg:col-span-2 order-2 lg:order-1">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/res-3.jpg"
+                  src="/garden-2.jpg"
                   alt="Garden Dining"
                   className="w-full h-[400px] object-cover"
                 />

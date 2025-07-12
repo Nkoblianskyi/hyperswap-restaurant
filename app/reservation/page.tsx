@@ -17,11 +17,31 @@ export default function ReservationPage() {
     specialRequests: "",
   })
 
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false)
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Handle form submission
     console.log("Reservation submitted:", formData)
-    alert("Thank you! Your reservation has been received. We will contact you shortly.")
+
+    // Show success popup
+    setShowSuccessPopup(true)
+
+    // Hide popup after 5 seconds
+    setTimeout(() => {
+      setShowSuccessPopup(false)
+    }, 5000)
+
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      date: "",
+      time: "",
+      guests: "2",
+      specialRequests: "",
+    })
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -29,6 +49,10 @@ export default function ReservationPage() {
       ...formData,
       [e.target.name]: e.target.value,
     })
+  }
+
+  const closePopup = () => {
+    setShowSuccessPopup(false)
   }
 
   return (
@@ -57,7 +81,7 @@ export default function ReservationPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Form */}
-          <div className="bg-darker p-6 sm:p-8 rounded-2xl shadow-2xl">
+          <div className="bg-darker p-6 sm:p-8 rounded-2xl shadow-2xl relative">
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-dark-gold">Reserve a Table</h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -198,6 +222,64 @@ export default function ReservationPage() {
                 Reserve Table
               </button>
             </form>
+
+            {/* Success Popup */}
+            {showSuccessPopup && (
+              <div className="absolute inset-0 bg-black/80 backdrop-blur-sm rounded-2xl flex items-center justify-center z-50">
+                <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border-2 border-dark-gold shadow-2xl max-w-md mx-4 text-center relative animate-fade-in">
+                  {/* Close Button */}
+                  <button
+                    onClick={closePopup}
+                    className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors duration-300"
+                  >
+                    <div className="w-6 h-6 relative">
+                      <div className="absolute inset-0 w-0.5 h-6 bg-current rotate-45 left-1/2 transform -translate-x-1/2"></div>
+                      <div className="absolute inset-0 w-0.5 h-6 bg-current -rotate-45 left-1/2 transform -translate-x-1/2"></div>
+                    </div>
+                  </button>
+
+                  {/* Success Icon */}
+                  <div className="w-16 h-16 bg-dark-gold/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <div className="w-8 h-8 border-2 border-dark-gold rounded-full flex items-center justify-center">
+                      <div className="w-3 h-1.5 border-l-2 border-b-2 border-dark-gold rotate-45 -mt-1"></div>
+                    </div>
+                  </div>
+
+                  {/* Success Message */}
+                  <h3 className="text-2xl font-bold text-dark-gold mb-4">Дякуємо за резервацію!</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    Ваша заявка успішно відправлена. Ми зв'яжемося з вами протягом 2 годин для підтвердження бронювання.
+                  </p>
+
+                  {/* Additional Info */}
+                  <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700 mb-6">
+                    <p className="text-sm text-gray-400 mb-2">Деталі резервації:</p>
+                    <div className="text-sm text-gray-300 space-y-1">
+                      <p>
+                        <span className="text-dark-gold">Ім'я:</span> {formData.name}
+                      </p>
+                      <p>
+                        <span className="text-dark-gold">Дата:</span> {formData.date}
+                      </p>
+                      <p>
+                        <span className="text-dark-gold">Час:</span> {formData.time}
+                      </p>
+                      <p>
+                        <span className="text-dark-gold">Гостей:</span> {formData.guests}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Action Button */}
+                  <button
+                    onClick={closePopup}
+                    className="w-full bg-dark-gold text-black py-3 rounded-lg font-semibold hover-bg-dark-gold transition-colors duration-300"
+                  >
+                    Зрозуміло
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Info */}

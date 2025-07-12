@@ -88,7 +88,7 @@ export const menuData: MenuCategory[] = [
         name: "Tonkotsu Ramen",
         description: "Rich pork bone broth simmered for 24 hours with chashu pork, soft egg, and bamboo shoots",
         price: "$18",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/ramen.jpg",
         category: "Ramen & Noodles",
         ingredients: [
           "Pork bone broth",
@@ -113,7 +113,7 @@ export const menuData: MenuCategory[] = [
         name: "Spicy Miso Ramen",
         description: "Fiery miso broth with ground pork, corn, and a perfectly soft egg",
         price: "$19",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/miso.jpg",
         category: "Ramen & Noodles",
         ingredients: [
           "Miso broth",
