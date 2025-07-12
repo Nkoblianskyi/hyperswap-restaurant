@@ -252,25 +252,6 @@ export default function ReservationPage() {
                     confirm your booking.
                   </p>
 
-                  {/* Additional Info */}
-                  <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700 mb-6">
-                    <p className="text-sm text-gray-400 mb-2">Reservation Details:</p>
-                    <div className="text-sm text-gray-300 space-y-1">
-                      <p>
-                        <span className="text-dark-gold">Name:</span> {formData.name}
-                      </p>
-                      <p>
-                        <span className="text-dark-gold">Date:</span> {formData.date}
-                      </p>
-                      <p>
-                        <span className="text-dark-gold">Time:</span> {formData.time}
-                      </p>
-                      <p>
-                        <span className="text-dark-gold">Guests:</span> {formData.guests}
-                      </p>
-                    </div>
-                  </div>
-
                   {/* Action Button */}
                   <button
                     onClick={closePopup}
@@ -292,15 +273,11 @@ export default function ReservationPage() {
                   <div className="w-5 h-5 border-2 border-dark-gold rounded mt-1"></div>
                   <div>
                     <p className="font-semibold">Address:</p>
-                    <p>123 Main Street, New York</p>
+                    <p>Dam 1, Amsterdam</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-5 h-5 border-2 border-dark-gold rounded"></div>
-                  <div>
-                    <p className="font-semibold">Phone:</p>
-                    <p>+1 (555) 123-4567</p>
-                  </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-5 h-5 border-2 border-dark-gold rounded"></div>
