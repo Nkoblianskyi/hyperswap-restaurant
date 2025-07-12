@@ -138,7 +138,7 @@ export const menuData: MenuCategory[] = [
         name: "Dan Dan Noodles",
         description: "Sichuan-style noodles with spicy sesame sauce and minced pork",
         price: "$17",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/dan-dan.jpg",
         category: "Ramen & Noodles",
         ingredients: [
           "Wheat noodles",
@@ -169,7 +169,7 @@ export const menuData: MenuCategory[] = [
         name: "Pad Thai with Prawns",
         description: "Classic stir-fried rice noodles with prawns, tofu, bean sprouts, and tamarind sauce",
         price: "$20",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/pad-thai.jpg",
         category: "Thai Specialties",
         ingredients: [
           "Rice noodles",
@@ -195,7 +195,7 @@ export const menuData: MenuCategory[] = [
         name: "Green Curry with Chicken",
         description: "Aromatic green curry with tender chicken, Thai eggplant, and basil leaves",
         price: "$19",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/curry-chiken.jpg",
         category: "Thai Specialties",
         ingredients: [
           "Chicken thigh",
@@ -220,7 +220,7 @@ export const menuData: MenuCategory[] = [
         name: "Som Tam (Papaya Salad)",
         description: "Fresh green papaya salad with tomatoes, green beans, and lime dressing",
         price: "$14",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/salat.jpg",
         category: "Thai Specialties",
         ingredients: [
           "Green papaya",
@@ -253,7 +253,7 @@ export const menuData: MenuCategory[] = [
         name: "Peking Duck",
         description: "Crispy duck served with thin pancakes, cucumber, scallions, and hoisin sauce",
         price: "$32",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/duck.jpg",
         category: "Chinese Classics",
         ingredients: ["Whole duck", "Thin pancakes", "Cucumber", "Scallions", "Hoisin sauce", "Five-spice powder"],
         allergens: ["Gluten", "Soy"],
@@ -269,7 +269,7 @@ export const menuData: MenuCategory[] = [
         name: "Mapo Tofu",
         description: "Silky tofu in spicy Sichuan sauce with minced pork and fermented black beans",
         price: "$16",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/mapo.jpg",
         category: "Chinese Classics",
         ingredients: [
           "Silky tofu",
@@ -294,7 +294,7 @@ export const menuData: MenuCategory[] = [
         name: "Xiaolongbao (Soup Dumplings)",
         description: "Delicate steamed dumplings filled with pork and savory broth",
         price: "$18",
-        image: "/placeholder.svg?height=300&width=400",
+        image: "/dump.jpg",
         category: "Chinese Classics",
         ingredients: [
           "Pork filling",
