@@ -278,9 +278,6 @@ export default function ReservationPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-5 h-5 border-2 border-dark-gold rounded"></div>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-5 h-5 border-2 border-dark-gold rounded"></div>
                   <div>
                     <p className="font-semibold">Email:</p>
                     <p>info@hyperswap.com</p>
