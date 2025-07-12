@@ -5,7 +5,7 @@ export default function ChefExpertise() {
       experience: "20 years",
       description:
         "Expert in traditional Japanese cuisine techniques, specializing in knife skills, fish selection, and rice preparation. Trained in authentic Edo-style sushi methods.",
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/sushi-m.jpg",
       skills: ["Knife Mastery", "Fish Selection", "Rice Preparation", "Traditional Techniques"],
     },
     {
@@ -13,7 +13,7 @@ export default function ChefExpertise() {
       experience: "15 years",
       description:
         "Specialist in high-heat cooking techniques, traditional Chinese stir-frying, and regional cuisine variations. Master of flame control and ingredient timing.",
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/wok-m2.jpg",
       skills: ["High-Heat Cooking", "Stir-Frying", "Flame Control", "Regional Cuisine"],
     },
     {
@@ -21,7 +21,7 @@ export default function ChefExpertise() {
       experience: "18 years",
       description:
         "Master of authentic Thai flavors, spice balancing, and traditional cooking methods. Expert in curry paste preparation and regional Thai specialties.",
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/thai-master.jpg",
       skills: ["Spice Balancing", "Curry Preparation", "Traditional Methods", "Regional Specialties"],
     },
   ]

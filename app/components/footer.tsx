@@ -8,7 +8,7 @@ export default function Footer() {
         <div
           className="w-full h-full bg-repeat"
           style={{
-            backgroundImage: `url('/placeholder.svg?height=100&width=100')`,
+            backgroundImage: `url('/bg.jpg')`,
             backgroundSize: "100px 100px",
           }}
         />
@@ -59,13 +59,9 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 
                 <div>
-                  <p>123 Main Street</p>
-                  <p>New York, NY 10001</p>
+                  <p>Dam 1</p>
+                  <p>Amsterdam, 1012 JS</p>
                 </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                
-                <p>+1 (555) 123-4567</p>
               </div>
               <div className="flex items-center space-x-3">
                 

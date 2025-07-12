@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +12,9 @@ export default function Navigation() {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-xl sm:text-2xl font-bold text-white tracking-wider">
-          HS
+          <div className="flex items-center bg-white rounded-full p-2">
+            <Image src="/logo.png" alt="Logo" width={30} height={30} />
+          </div>
         </Link>
 
         {/* Desktop Menu */}

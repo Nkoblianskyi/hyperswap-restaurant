@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title: "HyperSwap - Authentic Asian Cuisine",
   description:
     "Discover the true flavors of Asia at HyperSwap restaurant. Elegant atmosphere, master chefs, and exceptional dishes.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

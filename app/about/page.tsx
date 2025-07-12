@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/placeholder.svg?height=800&width=1920&text=elegant+asian+restaurant+interior')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/about.jpg')`,
           }}
         />
         <Navigation />
@@ -62,7 +62,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/placeholder.svg?height=600&width=500&text=restaurant+story+image"
+                  src="/res.jpg"
                   alt="Restaurant Story"
                   className="w-full h-[600px] object-cover"
                 />
@@ -150,7 +150,7 @@ export default function AboutPage() {
             <div className="lg:col-span-2">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/placeholder.svg?height=400&width=700&text=elegant+dining+hall+interior"
+                  src="/res-2.jpg"
                   alt="Dining Hall"
                   className="w-full h-[400px] object-cover"
                 />
@@ -170,7 +170,7 @@ export default function AboutPage() {
             <div className="lg:col-span-2 order-2 lg:order-1">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/placeholder.svg?height=400&width=700&text=zen+garden+outdoor+dining"
+                  src="/res-3.jpg"
                   alt="Garden Dining"
                   className="w-full h-[400px] object-cover"
                 />
@@ -228,7 +228,7 @@ export default function AboutPage() {
             <div className="lg:col-span-2">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/placeholder.svg?height=400&width=700&text=professional+asian+kitchen+chefs+cooking"
+                  src="/kitchen.jpg"
                   alt="Open Kitchen"
                   className="w-full h-[400px] object-cover"
                 />

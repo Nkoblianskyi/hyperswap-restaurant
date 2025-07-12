@@ -17,7 +17,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(10, 10, 10, 0.8)), url('/placeholder.svg?height=1080&width=1920')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(10, 10, 10, 0.8)), url('/bg.jpg')`,
         }}
       />
 

@@ -19,7 +19,7 @@ export default function DishPage({ params }: { params: { id: string } }) {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/placeholder.svg?height=800&width=1920'+')}+asian+dish+on+elegant+table')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/dragon-roll.jpg'+')}+asian+dish+on+elegant+table')`,
           }}
         />
         <Navigation />
@@ -48,7 +48,7 @@ export default function DishPage({ params }: { params: { id: string } }) {
             <img
               src={dish.image || "/placeholder.svg"}
               alt={dish.name}
-              className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-xl"
+              className="w-full h-72 sm:h-80 lg:h-96 object-cover rounded-lg shadow-xl"
             />
 
             {/* Badges */}
@@ -154,9 +154,11 @@ export default function DishPage({ params }: { params: { id: string } }) {
 
             {/* CTA */}
             <div className="pt-6">
-              <button className="w-full bg-dark-gold text-black py-3 sm:py-4 rounded-lg font-semibold text-lg hover-bg-dark-gold transition-colors duration-300">
-                Order Now
-              </button>
+              <Link href='/reservation'>
+                <button className="w-full bg-dark-gold text-black py-3 sm:py-4 rounded-lg font-semibold text-lg hover-bg-dark-gold transition-colors duration-300">
+                  Order Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>

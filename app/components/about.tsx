@@ -38,7 +38,7 @@ export default function About() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-lg shadow-2xl">
               <img
-                src="/placeholder.svg?height=600&width=500"
+                src="/design.jpg"
                 alt="Restaurant Interior"
                 className="w-full h-[600px] object-cover"
               />
