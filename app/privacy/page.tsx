@@ -71,18 +71,6 @@ export default function PrivacyPage() {
                 new policy on this page.
               </p>
             </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-4 text-dark-gold">7. Contact Information</h2>
-              <p className="text-gray-300 leading-relaxed">
-                If you have questions about this privacy policy, contact us:
-              </p>
-              <div className="mt-4 text-gray-300">
-                <p>Email: info@hyperswap.com</p>
-                <p>Phone: +1 (555) 123-4567</p>
-                <p>Address: 123 Main Street, New York, NY 10001</p>
-              </div>
-            </section>
           </div>
         </div>
       </div>
