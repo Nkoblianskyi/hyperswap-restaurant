@@ -95,7 +95,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 lg:mt-12 pt-6 lg:pt-8 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
           <p className="text-gray-400 text-sm text-center lg:text-left">
-            © 2024 HyperSwap. All rights reserved. Crafted with passion for authentic Asian cuisine.
+            © 2025 HyperSwap. All rights reserved. Crafted with passion for authentic Asian cuisine.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-end space-x-4 lg:space-x-6">
             <Link href="/privacy" className="text-gray-400 hover:text-dark-gold transition-colors duration-300 text-sm">
