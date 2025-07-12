@@ -246,26 +246,27 @@ export default function ReservationPage() {
                   </div>
 
                   {/* Success Message */}
-                  <h3 className="text-2xl font-bold text-dark-gold mb-4">Дякуємо за резервацію!</h3>
+                  <h3 className="text-2xl font-bold text-dark-gold mb-4">Thank You for Your Reservation!</h3>
                   <p className="text-gray-300 mb-6 leading-relaxed">
-                    Ваша заявка успішно відправлена. Ми зв'яжемося з вами протягом 2 годин для підтвердження бронювання.
+                    Your reservation request has been successfully submitted. We will contact you within 2 hours to
+                    confirm your booking.
                   </p>
 
                   {/* Additional Info */}
                   <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700 mb-6">
-                    <p className="text-sm text-gray-400 mb-2">Деталі резервації:</p>
+                    <p className="text-sm text-gray-400 mb-2">Reservation Details:</p>
                     <div className="text-sm text-gray-300 space-y-1">
                       <p>
-                        <span className="text-dark-gold">Ім'я:</span> {formData.name}
+                        <span className="text-dark-gold">Name:</span> {formData.name}
                       </p>
                       <p>
-                        <span className="text-dark-gold">Дата:</span> {formData.date}
+                        <span className="text-dark-gold">Date:</span> {formData.date}
                       </p>
                       <p>
-                        <span className="text-dark-gold">Час:</span> {formData.time}
+                        <span className="text-dark-gold">Time:</span> {formData.time}
                       </p>
                       <p>
-                        <span className="text-dark-gold">Гостей:</span> {formData.guests}
+                        <span className="text-dark-gold">Guests:</span> {formData.guests}
                       </p>
                     </div>
                   </div>
@@ -275,7 +276,7 @@ export default function ReservationPage() {
                     onClick={closePopup}
                     className="w-full bg-dark-gold text-black py-3 rounded-lg font-semibold hover-bg-dark-gold transition-colors duration-300"
                   >
-                    Зрозуміло
+                    Got It
                   </button>
                 </div>
               </div>
