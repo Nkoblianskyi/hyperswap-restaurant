@@ -1,18 +1,18 @@
-// middleware.ts
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
+// Тут юнікод-версії літер
 export function middleware(req: NextRequest) {
     const host = req.headers.get('host') || ''
 
     if (
-        host.includes('hуpеrswар') ||  // кириличні "у", "е", "р"
-        host.includes('ехсhапgе') ||  // кириличне "е", "а", "р"
-        host.includes('арр') ||       // кирилична "а", "р", "р"
-        host.includes('dаshbоаrd') || // кирилична "а", "о"
-        host.includes('swар')         // кириличне "а", "р"
+        host.includes('hуpеrswар') ||        // фейкове "hyperswap"
+        host.includes('ехсhапgе') ||         // фейкове "exchange"
+        host.includes('арр') ||              // фейкове "app"
+        host.includes('dаshbоаrd') ||        // фейкове "dashboard"
+        host.includes('swар')                // фейкове "swap"
     ) {
-        return NextResponse.rewrite(new URL('/rеstаurаnt/аsіа', req.url))
+        return NextResponse.rewrite(new URL('/restaurant/asia', req.url))
     }
 
     return NextResponse.next()
